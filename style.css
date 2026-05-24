@@ -215,42 +215,42 @@ header .icons #menu-bars{
     background: burlywood;
 }
 
-.goodies-grid{
+.goodies .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(28rem,1fr));
+    gap:1.5rem;
 }
 
-.goodies-item{
-    padding: 15px;
+.goodies .box-container .box{
+    padding: 2.5rem;
     background: #fff;
-    border-radius: 10px;
+    border-radius: .5rem;
     border: .1rem solid rgba(0,0,0,.2);
     box-shadow: 0 2px 15px rgba(0,0,0,.1);
-    transition: transform 0.3s;
+    position: relative;
     text-align: center;
+    overflow:hidden;
 }
 
-.goodies-item img{
-    border-radius: 5px;
-    width: 20%;
-    margin-bottom: 10px;
+.goodies .box-container .box img{
+    height :17rem;
+    margin:1rem 0;
 }
 
-.goodies-item :hover{
+.goodies .box-container .box img :hover{
     transform: scale(1.05);
 }
 
-.goodies-item span{
+.goodies .box-container .box span{
     color: burlywood;
     font-weight: bolder;
     margin-right: 1rem;
     font-size: 2.5rem;
 }
 
-.goodies-item h3{
+.goodies .box-container .box h3{
     color: lightcoral;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .about-text{
@@ -314,40 +314,51 @@ header .icons #menu-bars{
     color: lightcoral;
 }
 
-.card.container{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
+.menu.box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
 }
 
-.card{
+.menu .box-container .box{
     width: 325px;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
+    background: #fff;
+    border: 1rem solid rgba(0,0,0, .2);
+    border-radius:.5rem;
     box-shadow: 0px 2px 4px rgba(0,0,0,.1);
-    margin: 20px;
-    text-align: center;
-    transition: transform 0.3s;
 }
-.card img{
+.menu .box-container .box .image{
     width: 100%;
-    height: auto;
+    height: 25rem;
+    padding:1.5rem;
+    overflow:hidden;
+    position :relative;
 }
-.card-content{
-    padding: 16px;
+.menu .box-container .box .image .img{
+    height:100%;
+    width:100%;
+    border-radius:.5rem;
 }
-.card-content h3{
-    font-size: 28px;
-    margin-top: 8px;
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top:0;
 }
-.card-content p{
-    color: lightsalmon;
-    font-size: 15px;
-    line-height: 1.3;
+.menu .box-container .box .content h3{
+    color: burlywood;
+    font-size: 2.5rem;
 }
-.card-content span{
+.menu .box-container .box .content p{
+    color:lightslategray;
+    font-size:1.7rem;
+    padding:5rem 0;
+    line-height:1.5;
+}
+.menu .box-container .box .content .price{
+    color:burlywood;
+    margin-left:1rem;
+    font-size:2.5rem;
+}
+.menu .box-container .box span{
     display: inline-block;
     padding: 8px 16px;
     background: white;
